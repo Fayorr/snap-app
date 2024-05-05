@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="app.css" rel="stylesheet"
-    <title>Snap</title>
+    <link href="app.css" rel="stylesheet"  
 </head>
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="logo" class="logo">
-        <ul class="nav--container">
-            <li class="nav--link">features<span class="arrow">^</span>
-            <div class="dropdown--menu">
-                
-            </div>
-            </li>
-            <li class="nav--link">company<span class="arrow">^</span></li>
-            <li class="nav--link">careers</li>
-            <li class="nav--link">about</li>
-        </ul>
+        <div class="nav-section">
+            <img src="./assets/logo.svg" alt="logo" class="logo" />
+            <ul class="nav--container">
+                <li class="nav--link">features<img class="arrow" />
+                    <div class="dropdown--menu">
+                        
+                    </div>
+                </li>
+                <li class="nav--link">company</li>
+                <li class="nav--link">careers</li>
+                <li class="nav--link">about</li>
+            </ul>
+        </div>
         <div class="nav-button-container">
             <button class="login-btn">login</button>
             <button class="register-btn">register</button>
@@ -36,7 +37,9 @@
             <img src="./assets/client-maker.svg" alt="logo">
         </div>
     </div>
-    <div class="hero--img"></div>
+    <div class="hero--img--container">
+        <img class="hero--img" alt="" />
+    </div>
     </main>
 </body>
 </html>

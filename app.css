@@ -2,4 +2,202 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        /* background-color: red; */
+    }
+
+    .hero--img {
+        content: url("./assets/image-hero-mobile.png");
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        /* background-color: yellow; */
+    }
+
+
+    .hero--img {
+        content: url("./assets/image-hero-mobile.png");
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        /* background-color: blueviolet; */
+    }
+
+
+    .hero {
+        display: flex;
+
+    }
+
+
+
+    .hero--img {
+        content: url("./assets/image-hero-desktop.png");
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    body {
+        /* background-color: green; */
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+        height: 5rem;
+        padding: 0 5rem;
+    }
+
+    .logo {
+        /* padding-left: 5rem; */
+    }
+
+    .nav-section {
+        display: flex;
+
+    }
+
+    .nav--container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        /* width: 14rem; */
+        background-color: yellow;
+        padding-left: 3rem;
+        text-transform: capitalize;
+
+    }
+
+    .nav--container li {
+        list-style-type: none;
+    }
+
+    .dropdown--menu {
+        justify-content: space-between;
+        text-decoration: none;
+    }
+
+    .nav--link {
+        text-decoration: none;
+    }
+
+    .login-btn {
+        width: 7rem;
+        height: 2.4rem;
+        background-color: transparent;
+        border: none;
+        text-transform: capitalize;
+
+    }
+
+    .login-btn:hover {
+        font-weight: 700;
+        transition: ease-out;
+        transition-duration: 200ms;
+    }
+
+    .register-btn {
+        border-radius: .5rem;
+        border: 2px solid #000;
+        width: 7rem;
+        height: 2.4rem;
+        color: #000;
+        background-color: transparent;
+        text-transform: capitalize;
+    }
+
+    .register-btn:hover {
+        font-weight: 700;
+        transition: ease-out;
+        transition-duration: 500ms;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1rem 8rem 0rem;
+        padding-top: 2rem;
+
+        background-color: yellow;
+
+        padding: 0;
+    }
+
+    .hero--text {
+
+        /* background-color: red; */
+        width: 50%;
+        /* margin: auto; */
+
+    }
+
+    .hero--text h1 {
+        font-size: 5rem;
+        width: 89%;
+    }
+
+    .hero--text p {
+        color: grey;
+        line-height: 1.23rem;
+        width: 60%;
+        margin: 1rem 0 2rem;
+    }
+
+    .learnmore-btn {
+        border-radius: .5rem;
+        border: none;
+        width: 7rem;
+        height: 2.4rem;
+        color: white;
+        background-color: #000;
+    }
+
+    .learnmore-btn:hover {
+        border-radius: .5rem;
+        border: 2px solid #000;
+        width: 7rem;
+        height: 2.4rem;
+        color: #000;
+        background-color: transparent;
+        transition: ease-out;
+        transition-duration: 200ms;
+    }
+
+    .client-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hero--img--container {
+        width: 100%;
+
+    }
+
+    .hero--img {
+        content: url("./assets/image-hero-desktop.png");
+        width: 60%;
+        background-color: red;
+    }
+
 }
