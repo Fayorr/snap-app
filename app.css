@@ -57,7 +57,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: red;
+        /* background-color: red; */
         height: 5rem;
         padding: 0 5rem;
     }
@@ -86,6 +86,7 @@
 
     .nav--container li {
         list-style-type: none;
+        cursor: pointer;
     }
 
     .dropdown--menu {
@@ -103,6 +104,7 @@
         background-color: transparent;
         border: none;
         text-transform: capitalize;
+        cursor: pointer;
 
     }
 
@@ -120,6 +122,7 @@
         color: #000;
         background-color: transparent;
         text-transform: capitalize;
+        cursor: pointer;
     }
 
     .register-btn:hover {
@@ -131,34 +134,29 @@
     .hero {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
-        margin: 1rem 8rem 0rem;
-        padding-top: 2rem;
+        margin: 1rem 11rem 0rem;
+        /* padding: 0rem 4rem 0rem; */
 
-        background-color: yellow;
-
-        padding: 0;
     }
 
     .hero--text {
-
-        /* background-color: red; */
-        width: 50%;
-        /* margin: auto; */
-
+        width: 60%;
     }
 
     .hero--text h1 {
-        font-size: 5rem;
-        width: 89%;
+        font-size: 4.5rem;
+        width: 74%;
+        margin-bottom: 1rem;
     }
 
     .hero--text p {
         color: grey;
-        line-height: 1.23rem;
-        width: 60%;
-        margin: 1rem 0 2rem;
+        font-size: 1.2em;
+        line-height: 1.63rem;
+        width: 70%;
+        margin: 1.5rem 0 2rem;
     }
 
     .learnmore-btn {
@@ -168,6 +166,8 @@
         height: 2.4rem;
         color: white;
         background-color: #000;
+        margin: 1rem 0 2rem;
+        cursor: pointer;
     }
 
     .learnmore-btn:hover {
@@ -186,18 +186,17 @@
         justify-content: flex-start;
         align-items: center;
         gap: 1rem;
-        margin-top: 2rem;
+        margin: 2rem 0 2rem;
     }
 
     .hero--img--container {
-        width: 100%;
-
+        width: 40%;
+        display: flex;
     }
 
     .hero--img {
         content: url("./assets/image-hero-desktop.png");
-        width: 60%;
-        background-color: red;
+        width: 100%;
     }
 
 }
