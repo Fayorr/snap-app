@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="app.css" rel="stylesheet"  
+    <link href="app.css" rel="stylesheet"  >
 </head>
 <body>
     <header>
-        <div class="nav-section">
+        <div class="nav-section active">
             <img src="./assets/logo.svg" alt="logo" class="logo" />
             <ul class="nav--container">
                 <li class="nav--link">features<img class="arrow" />
@@ -18,11 +18,12 @@
                 <li class="nav--link">company</li>
                 <li class="nav--link">careers</li>
                 <li class="nav--link">about</li>
+                <div class="nav-button-container">
+                    <button class="login-btn">login</button>
+                    <button class="register-btn">register</button>
+                </div>
             </ul>
-        </div>
-        <div class="nav-button-container">
-            <button class="login-btn">login</button>
-            <button class="register-btn">register</button>
+            <div class="hamburger">X</div>
         </div>
     </header>
     <main class="hero">
@@ -41,5 +42,6 @@
         </div>
     </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
