@@ -6,6 +6,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+
 }
 
 
@@ -36,17 +37,25 @@
         font-weight: 700;
     }
 
+    #x-icon {
+        user-select: none;
+        font-weight: 700;
+        /* background-color: red; */
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .nav--container {
         position: absolute;
         width: 60%;
         height: 100vh;
         top: 0;
         right: 0;
-        top: 100%;
+        /* top: 100%; */
         gap: 1rem;
         display: flex;
         flex-direction: column;
-        background-color: antiquewhite;
+        background-color: white;
         ;
         padding: .5rem 1rem;
         display: none;
@@ -64,7 +73,7 @@
 
         align-items: center;
         gap: .7rem;
-        background-color: red;
+        /* background-color: red; */
         padding-top: .4rem;
     }
 
@@ -231,7 +240,7 @@
     }
 
     .nav--container {
-        display: none;
+        display: flex;
     }
 
     .nav-button-container {

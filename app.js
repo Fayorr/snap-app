@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector('.hamburger');
     const navContainer = document.querySelector('.nav--container');
+    const body = document.getElementById('body')
+    const xIcon = document.getElementById('x-icon')
 
     // Create the hamburger icon element
     const hamburgerIcon = document.createElement('div');
@@ -11,14 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Append the icon to the container
     hamburger.appendChild(hamburgerIcon);
 
-    // Add click event listener to toggle between hamburger and X
+
     hamburgerIcon.addEventListener('click', function () {
-        if (hamburgerIcon.textContent === '☰') {
-            hamburgerIcon.textContent = '✖'; // Unicode character for 'X'
-            navContainer.style.display = "flex";
-        } else {
-            hamburgerIcon.textContent = '☰';
-            navContainer.style.display = "none";
-        }
+        navContainer.style.display = "flex";
+        body.style.backgroundColor = "rgb(82, 81, 81)";
+
+
     });
+    xIcon.addEventListener("click", function () {
+        navContainer.style.display = "none";
+        body.style.backgroundColor = "white";
+    })
 });
