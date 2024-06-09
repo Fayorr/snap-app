@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
@@ -13,7 +17,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: antiquewhite;
+        background-color: transparent;
         ;
         align-items: center;
         padding: .7rem 1rem;
@@ -25,6 +29,11 @@
     .hamburger {
         cursor: pointer;
         display: flex;
+    }
+
+    #hamburger-icon {
+        user-select: none;
+        font-weight: 700;
     }
 
     .nav--container {
@@ -147,6 +156,7 @@
 
     .hero--text h1 {
         font-size: 2.5rem;
+        font-weight: 700;
         margin: 1.5rem 0;
         display: flex;
         justify-content: center;
