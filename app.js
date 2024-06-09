@@ -21,7 +21,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
     xIcon.addEventListener("click", function () {
-        navContainer.style.display = "none";
+        function myFunction(x) {
+
+            if (x.matches) { // If media query matches
+                navContainer.style.display = "none";
+            } else {
+                navContainer.style.display = "flex";
+            }
+        }
+        const x = window.matchMedia("(max-width: 1000px)")
+        myFunction(x);
+
+        x.addEventListener("change", function () {
+            myFunction(x);
+        });
         body.style.backgroundColor = "white";
     })
 });

@@ -244,11 +244,15 @@
     }
 
     .nav-button-container {
-        display: none;
+        display: flex;
     }
 
     .hamburger {
         cursor: pointer;
+    }
+
+    #x-icon {
+        display: none;
     }
 
     /* .hero {
@@ -354,6 +358,13 @@
 
     .hamburger {
         cursor: pointer;
+        display: none;
+    }
+
+    #x-icon {
+        user-select: none;
+        font-weight: 700;
+        /* background-color: red; */
         display: none;
     }
 
