@@ -7,9 +7,7 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-    body {
-        /* background-color: red; */
-    }
+
 
     .nav-section {
         display: flex;
@@ -35,7 +33,6 @@
         height: 100vh;
         top: 0;
         right: 0;
-        /* height: auto; */
         top: 100%;
         gap: 1rem;
         display: flex;
@@ -55,7 +52,7 @@
         display: flex;
         flex-direction: column;
         justify-content: stretch;
-        
+
         align-items: center;
         gap: .7rem;
         background-color: red;
@@ -85,7 +82,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         padding: 0 2rem;
         color: #000;
         /* background-color: yellow; */
@@ -131,6 +128,7 @@
         transition: ease-out;
         transition-duration: 500ms;
     }
+
     /* .hero--img--container{
         width: 90%;
     } */
@@ -138,22 +136,23 @@
         content: url("./assets/image-hero-mobile.png");
         width: 100%;
     }
-.hero--text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
-    width: 90%;
-}
 
-.hero--text h1 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-    display: flex;
-    justify-content: center;
-    /* background-color: yellow; */
+    .hero--text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
         width: 100%;
-        }
+    }
+
+    .hero--text h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+        display: flex;
+        justify-content: center;
+        /* background-color: yellow; */
+        width: 100%;
+    }
 }
 
 .hero--text p {
@@ -170,6 +169,42 @@
     /* padding: 0 4rem; */
 }
 
+.learnmore-btn {
+    border-radius: .5rem;
+    border: none;
+    width: 7rem;
+    height: 2.4rem;
+    color: white;
+    background-color: #000;
+    margin: 1rem auto;
+    cursor: pointer;
+
+}
+
+.learnmore-btn:hover {
+    border-radius: .5rem;
+    border: 2px solid #000;
+    width: 7rem;
+    height: 2.4rem;
+    color: #000;
+    background-color: transparent;
+    transition: ease-out;
+    transition-duration: 200ms;
+}
+
+.client-logo {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    gap: 1rem;
+    padding: .5rem 0 0rem;
+    /* background-color: yellow; */
+    width: 100vw;
+}
+
+.client-logo {
+    width: 50%;
+    /* background-color: BLUE; */
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -258,9 +293,6 @@
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) {
-    body {
-        /* background-color: green; */
-    }
 
     header {
         display: flex;
@@ -271,9 +303,6 @@
         padding: 0 5rem;
     }
 
-    .logo {
-        /* padding-left: 5rem; */
-    }
 
     .nav-section {
         display: flex;
